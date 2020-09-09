@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>아규먼트로 함수 전달하기(고차함수: 함수를 데이터로 다루는 함수)</h1>
+<hr>
+<script>
+function output(p) {
+	if(typeof p == 'function') {
+		p("ㅋㅋㅋ");
+	}
+	else {
+		document.write("<h2>ㅋㅋㅋ : "+p+"</h2>");		
+	}	
+}
+
+output("둘리");                                         // --> false 이므로 else로 빠져 ㅋㅋㅋ 와 함께 호출
+output(function(param) { console.log(param);})         // --> 이름 없는 함수 --> true로 빠져 콘솔창에 ㅋㅋㅋ와 함께 호출
+
+function myAlert(param) {
+//var myAlert = function(param) {	
+	window.alert(param);
+}
+output(myAlert);
+</script>
+</body>
+</html>
+
+
+
+
+
+

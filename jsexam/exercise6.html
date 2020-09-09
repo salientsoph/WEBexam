@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="util.js"></script>
+<script>
+    function printObject(p){
+        if(typeof p == 'object'){
+        writeColor(p.content, p.tag, p.color);
+        }
+    }
+
+    var p = [{content: "안녕", tag: "h1" , color: "blue" },
+    {content: "잘가", tag: "h2", color: "orange" } ,
+    {content: "반가워", tag: "h2", color: "green" } ,
+    {content: "바이바이", tag: "h3", color: "purple" } ,
+    {content: "잘자", tag: "h3", color: "yellow" }
+    ]
+
+    for(var i = 0; i < 5; i++){
+    printObject(p[i])
+    }
+
+</script>
+</body>
+</html>
+
+
+
+// . 을 붙이면 객체가 된다.
+// ex> 3.141592 는 number이지만, 3.141592. 은 객체

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       p:nth-child(2) {                     /* -> 2번째 자식인 p tag*/
+            color : red;
+        }
+       p:nth-of-type(2) {                   /* type 이 같은 것중에 2번째*/
+            color : blue;
+        }
+       section > h1 {                       /*자식(바로 아래)*/
+            color : green;
+        }
+        section h1 {                        /*자손*/
+            background-color : pink;
+        }
+        img {
+            width : 150px;
+        }
+        img[src$=gif] {                      /* = "gif로 끝나는" /  $: 마지막 /  ^: 시작  */
+            border : 1px dotted red;
+        }
+    </style>
+</head>
+<body>
+<div>
+<h3>어린 왕자</h3>
+<p>1장 </p>                               /* : 2번째 자식인 p tag*/
+<p>2장 </p>                               /* type 이 같은 것중에 2번째*/
+</div>
+<section>
+    <h1>섹션제목</h1>
+    <article>
+        <h1>아티클제목</h1>                /*여기서 h1은 아티클의 자식, 섹션의 손자*/
+    </article>
+</section>
+<img src="/edu/images/1.jpg">
+<img src="/edu/images/r1.gif">
+</body>
+</html>

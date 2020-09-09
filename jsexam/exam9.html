@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>배열 생성과 활용(1)</h1>
+<hr>
+<script>
+var a1 = [];
+document.write("<h3>"+ typeof a1 +"</h3>");
+document.write("<h3>"+ Array.isArray(a1) +"</h3>");
+document.write("<h3>"+ a1.length +"</h3>");    //배열을 알고 싶을 때: (알고 싶은 배열).length
+document.write("<h3>"+ a1[0] +"</h3>");        //undefined 로 나옴.   &&& 자바스크립트 인덱싱은 0부터 시작함.
+document.write("<hr>");
+a1[4] = 100;                                   //아직 아무것도 없는 상황에 5번째에 100을 부과 --> 일단 방을 5개 만듦
+document.write("<h3>"+ a1.length +"</h3>");    //방이 5개라서 5로 나옴(현재 element 5개, 4개는 undefined, 1개는 '100')
+for(var i=0; i < a1.length; i++)
+	document.write("<h4>"+ a1[i] +"</h4>");    //undefined 4개, '100' 1개
+document.write("<hr>");
+for(var i in a1)                               //Java에서 for 반복문 표현:  for(int data : ary)
+	document.write("<h4>"+ a1[i] +"</h4>");    //for in 반복문에서 element를 꺼내오는게 아니고, 꺼내올 데이터의 인덱스를 줌
+	                                           //for in 반복문에선 undefined 는 출력하지 않는다. --> '100'만 출력
+document.write("<hr>");
+var a2 = [10, '가나다', true, 3.5];             //다양한 타입이 들어올 수 있다. 또한 가변적이다(더 추가하기 등 가능)
+for(var i in a2)                               // for(int data : ary)
+	document.write("<h4>"+ typeof a2[i] + ":" + a2[i] +"</h4>");
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>자바스크립트의 연산자(2)</h1>
+<hr>
+<pre>
+<script>
+	var num=window.prompt("숫자 하나를 입력해 주세요.")
+	// num이 짝수이면 "xx는 짝수"
+	// num이 홀수이면 "xx는 홀수"
+	num % 2 == 0 && document.writeln(num+"는 짝수");   //&&(논리and): 2로 나눈 나머지가 0이면(true), 짝수라고 출력해라
+	                                                  //앞에 있는 항의 참 거짓에 따라 뒤의 항이 수행된다
+	num % 2 == 0 || document.writeln(num+"는 홀수");   //||(논리or): 2로 나눈 나머지가 0이 아니라면(false), 홀수라고 출력해라
+</script>
+</pre>
+</body>
+</html>
+

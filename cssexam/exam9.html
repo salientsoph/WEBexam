@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 학습</title>
+    <style>
+        h1{
+        text-align: center;
+        }
+        #linkarea{
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>주요 HTML 태그 학습</h1>
+<hr>
+<div id="linkarea">
+<a href="http://www.w3.org/">W3C</a>
+<a href="http://www.w3schools.com/">W3Schools</a>
+<a href="http://www.python.org/">python</a>
+</div>
+<hr>
+<figure>
+<a href = "http://java.sun.com/">
+    <img src="http://localhost:8000/edu/images/duke.png"width="150">
+</a>
+<img src="/edu/images/sundie.png"width="300">
+    <figcaption>듀크 이미지 모음</figcaption>
+</figure>
+<figure>
+    <figcaption>카카오 이미지</figcaption>
+<img src="../images/kakao/g1.png"width="200">
+    </figure>
+<hr>
+<form method="get" action="......">
+    이름<input type="text" name="stname" required><br>
+    암호<input type="password" name="stpwd" required><br>
+    나이<input type="number" name="stnum"><br>
+    색깔<input type="color" name="stcolor"><br>
+    날짜<input type="date" name="stdate"><br>
+    날짜와 시간<input type="datetime-local" name="stdatetime"><br>
+    성별<input type="radio" name="gender" value="female">여성
+    <input type="radio" name="gender" value="male">남성<br>
+    취미<input type="checkbox" name="hobby" value="등산"> 등산
+    <input type="checkbox" name="hobby" value="수영"> 수영
+    <input type="checkbox" name="hobby" value="골프"> 골프
+    <input type="checkbox" name="hobby" value="여행"> 여행<br>
+    <select name="year">
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+    </select>
+    <br>
+    남기고자 하는 글<br>
+    <textarea rows="10" cols="100"></textarea><br>
+    <input type="file" name="uploadfile"><br>
+    <input type="submit" value="보내기"><br>
+    <input type="reset" value="재작성하기"><br>
+</form>
+<hr/>
+<h2>좋아하는 음식</h2>
+<ol>
+    <li>삼겹살</li>
+    <li>떡볶이</li>
+    <li>치킨</li>
+</ol>
+<h2>우리가 학습할 <span style="color:blue">웹 클라이언트</span> 기술</h2>
+<h2>우리가 학습할 <div style="color:blue">웹 클라이언트</div> 기술</h2>
+<ul>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>HTML5</li>
+</ul>
+<hr/>
+<table border = "1">
+    <tr><th>선택자</th><th>기능</th></tr>
+    <tr><td>태그선택자</td><td><em>태그명</em>태그명을 가지고 스타일을 적용할 대상을 찾는다.</td></tr>
+    <tr><td>ID선택자</td><td>태그에 정의된 <em>id 속성</em>의 값을 가지고 스타일을 적용할 대상을 찾는다.</td></tr>
+    <tr><td>CLASS선택자</td><td>태그에 성의된 <em>class 속성<em/>의 값을 가지고 스타일을 적용할 대상을 찾는다.</td></tr>
+</table>
+<hr>
+오늘은<br><br><br>
+즐거운
+금&nbsp;요일 <br>
+100 & 50  50 < 100
+<hr>
+<video id="media" width="720" height="400" controls>
+    <source src="trailer.mp4">
+    <source src="trailer.ogg">
+</video>
+</body>
+</html>
+

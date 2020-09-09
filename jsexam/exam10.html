@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>배열 생성과 활용(2)</h1>
+<hr>
+<script>
+var a1 = new Array();             // [ ]
+var a2 = new Array(10);           // 크기 (숫자를 하나 줬을 때는 크기를 지정함 ---> 10개의 방을 만듦) 혹은 [,,,,,,,,,,]으로도 표현
+var a3 = new Array('가');         // 원소값(자바스크립트는 'property'라고 부름) ---> ['가'] 으로도 표현 가능
+var a4 = new Array(10, 20);       // 원소값 ---> [10,20]
+var a5 = new Array(1,2,3,4,5);    // 원소값 ---> [1,2,3,4,5]
+/* window.alert(a1.length);
+window.alert(a2.length);
+window.alert(a3.length);
+window.alert(a4.length);
+window.alert(a5.length); */
+document.write(a1 + "<br>");                // 그냥 객체를 출력함(자동으로 toString 호출)
+document.write(a2.toString() + "<br>");     // toString(): 객체의 정보를 하나의 문자열로 출력할 때 사용
+document.write(a3.toString() + "<br>");
+document.write(a4.toString() + "<br>");
+document.write(a5.toString() + "<br>");
+var d = new Date();
+document.write(d.toString() + "<br>");
+document.write(d + "<br>");
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

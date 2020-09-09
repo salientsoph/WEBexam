@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function sum(a){
+    var sum = 0;
+    if(a != undefined){
+    for(var t = 1; t < (a+1); t++){
+    sum = sum + t;
+    }
+    return(sum);
+    }
+    }
+
+    document.write(sum(6) + "<br>")
+    document.write(sum(10) + "<br>")
+
+    var ran = Math.floor(Math.random() * 6);
+    if(ran == 0){
+    document.write("결과값이 없어요!!");
+    }
+    else{
+    document.write("호출 결과값:" + sum(ran));
+    }
+
+
+</script>
+
+</body>
+</html>
